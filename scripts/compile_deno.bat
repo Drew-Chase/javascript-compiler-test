@@ -7,6 +7,6 @@ if errorlevel 1 (
 )
 
 echo Compiling Deno
-mkdir dist
+mkdir dist > nul 2>&1
 deno compile test.js
 move test.exe ./dist/test_deno.exe

@@ -7,5 +7,5 @@ if errorlevel 1 (
 )
 
 echo Compiling Bun
-mkdir dist
+mkdir dist > nul 2>&1
 bun build .\test.js --compile --outfile dist/test_bun
